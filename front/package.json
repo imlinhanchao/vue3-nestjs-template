@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@iconify/json": "^2.2.237",
     "@unocss/reset": "^0.58.5",
     "@vueuse/core": "^10.11.0",

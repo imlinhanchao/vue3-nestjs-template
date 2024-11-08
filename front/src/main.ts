@@ -10,6 +10,7 @@ import App from '@/layouts/App.vue';
 import router, { setupRouter } from './router';
 import { setupStore } from './store';
 import { setupRouterGuard } from './router/guard';
+import { setupGlobIcon } from './helper/iconHelper';
 
 async function bootstrap() {
   const app = createApp(App);
@@ -22,6 +23,8 @@ async function bootstrap() {
 
   // router-guard
   setupRouterGuard(router);
+
+  setupGlobIcon(app);
 
   app.mount('#app');
 }
